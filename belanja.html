@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UA</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="topnav">
+      <a href="account.html">Account</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="categories.html">Categories </a>
+      <a href="home.html">Home</a>
+
+      <div class="logo-container">
+        <img src="elangtimur.jpg" alt="logo" class="logo" />
+        <h1 class="logo-text">ELANG TIMUR</h1>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          id="search-input"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>ISI FORMULIR DIBAWAH</h2>
+      <form action="/proses_pembelian" method="post">
+        <div class="form-group">
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="alamat">Alamat:</label>
+          <textarea id="alamat" name="alamat" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="jumlah">Jumlah:</label>
+          <input type="number" id="jumlah" name="jumlah" min="1" required />
+        </div>
+        <div class="form-group">
+          <label>Metode Pembayaran:</label>
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="metode_pembayaran_cod"
+              name="metode_pembayaran"
+              value="COD"
+              required
+            />
+            <label for="metode_pembayaran_cod">COD</label>
+            <input
+              type="radio"
+              id="metode_pembayaran_transfer"
+              name="metode_pembayaran"
+              value="Transfer"
+              required
+            />
+            <label for="metode_pembayaran_transfer">Transfer</label>
+          </div>
+        </div>
+        <div class="form-group">
+          <input type="submit" value="Beli Sekarang" />
+        </div>
+      </form>
+    </div>
+
+    <div class="footer">
+      <div class="contact-us"></div>
+      <p>© Elang Timur. All rights reserved.</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a
+          href="https://instagram.com/ulzyy_?igshid=OGQ5ZDc2ODk2ZA=="
+          class="social-icon instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/oelzy.tbx"
+          class="social-icon facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ulul-azmi-a-latala-b2a15a269"
+          class="social-icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+6282196699498" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

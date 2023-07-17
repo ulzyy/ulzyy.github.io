@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style1.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UA</title>
+  </head>
+
+  <body>
+    <div class="topnav">
+      <a href="account.html">Account</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="categories.html">Categories</a>
+      <a href="home.html">Home</a>
+
+      <div class="logo-container">
+        <img src="elangtimur.jpg" alt="logo" class="logo" />
+        <h1 class="logo-text">ELANG TIMUR</h1>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          id="search-input"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <form method="post" enctype="text/css">
+        <h2><i class="fas fa-lock"></i> SIGN IN</h2>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="password-input">
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Enter your password"
+              required
+            />
+            <a href="#" id="toggle-password"><i class="far fa-eye"></i></a>
+          </div>
+        </div>
+
+        <button type="submit">Sign in</button>
+        <div class="social">
+          <a
+            href="https://accounts.google.com/InteractiveLogin/identifier?hl=in&ifkv=AeDOFXhtJnXAt367jaMfKHWi6VqhnuIXsrCKPNbafqlP5bREZlSi109wZOfmU8NfjE4W0r_zKGjlDw&flowName=GlifWebSignIn&flowEntry=ServiceLogin"
+          >
+            <div class="go">
+              <i class="fab fa-google">Google</i>
+            </div></a
+          >
+          <a
+            href="https://id-id.facebook.com/login/device-based/regular/login/?login_attempt=1"
+          >
+            <div class="fb">
+              <i class="fab fa-facebook">Facebook</i>
+            </div></a
+          >
+        </div>
+
+        <div class="create-account">
+          <p>
+            Don't have an account? <a href="daftar.html">Create an Account</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

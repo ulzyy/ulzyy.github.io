@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UA</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="topnav">
+      <a href="account.html">Account</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="categories.html">Categories</a>
+      <a href="home.html">Home</a>
+
+      <div class="logo-container">
+        <img src="elangtimur.jpg" alt="logo" class="logo" />
+        <h1 class="logo-text">ELANG TIMUR</h1>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          id="search-input"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana1.jpg" alt="celana1" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CARGO TACTICAL</p>
+            <p class="text-body">
+              100% Kain Ripstop Nilon <br />
+              Ready size 29-40
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.300.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana2.jpg" alt="celana2" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CARGO ARMY CORDUROY</p>
+            <p class="text-body">
+              100% Kain Kanvas Katun <br />
+              Ready size 31-40
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.250.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana3.jpg" alt="celana3" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">DARK EAGLE</p>
+            <p class="text-body">
+              100% Kain Gabardine <br />
+              Ready size 30-39
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.310.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512" title="Buy">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana4.jpg" alt="celana4" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CELANA JOGGER</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size 30-41
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.100.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana5.jpg" alt="celana5" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CARGO PENDEK</p>
+            <p class="text-body">
+              100% Kain Kanvas Katun Twill <br />
+              Ready size 31-40
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.169.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana6.jpg" alt="celana6" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CARGO JEANS</p>
+            <p class="text-body">
+              100% Kain Kanvas Katun Twill <br />
+              Ready size 31-40
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.389.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana7.jpg" alt="celana7" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CELANA JEANS PREMIUM</p>
+            <p class="text-body">
+              100% Kain Blue Jeans<br />
+              Ready size 33-39
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.120.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana8.jpg" alt="celana8" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CORDUROY PREMIUM</p>
+            <p class="text-body">
+              100% Kain Corduroy Premium <br />
+              Ready size 30-41
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.200.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana9.jpg" alt="celana9" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CELANA KAIN PREMIUM</p>
+            <p class="text-body">
+              100% Kain Premium <br />
+              Ready size 28-40
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.199.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="celana10.jpg" alt="celana10" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">HEUVEL CHINOS</p>
+            <p class="text-body">
+              100% Kain Twill Premium <br />
+              Ready size 30-38
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.174.900</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prev-next">
+      <a href="categories.html">
+        <button class="prev-button" title="back">
+          <i class="fas fa-chevron-left"></i></button
+      ></a>
+      <a href="sepatu.html">
+        <button class="next-button" title="next">
+          <i class="fas fa-chevron-right"></i></button
+      ></a>
+    </div>
+
+    <div class="footer">
+      <div class="contact-us"></div>
+      <p>© Elang Timur. All rights reserved.</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a
+          href="https://instagram.com/ulzyy_?igshid=OGQ5ZDc2ODk2ZA=="
+          class="social-icon instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/oelzy.tbx"
+          class="social-icon facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ulul-azmi-a-latala-b2a15a269"
+          class="social-icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+6282196699498" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

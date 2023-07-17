@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UA</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="topnav">
+      <a href="account.html">Account</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="categories.html">
+        <select id="categories" name="categories">
+          <option value="">Categories</option>
+          <option value="Men">Men</option>
+          <option value="Women">Women</option>
+        </select>
+      </a>
+      <a href="home.html">Home</a>
+
+      <div class="logo-container">
+        <img src="elangtimur.jpg" alt="logo" class="logo" />
+        <h1 class="logo-text">ELANG TIMUR</h1>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          id="search-input"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju1.jpg" alt="baju1" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">CREWNECK BASIC ABU-ABU</p>
+            <p class="text-body">
+              100% Kain katun premium <br />
+              Ready size M-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.209.900</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju2.jpg" alt="baju2" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">HOODIE BASIC ABU-ABU</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size M-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.399.900</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju3.jpg" alt="baju3" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KAOS HITAM FULLPRINT</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size S-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.249.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju4.jpg" alt="baju4" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KAOS ABU-ABU FULLPRINT</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size S-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.249.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju5.jpg" alt="baju5" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KAOS PUTIH FULLPRINT</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size S-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.249.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju6.jpg" alt="baju6" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KEMEJA UNIQLO</p>
+            <p class="text-body">
+              100% Kain Linen Premium <br />
+              Ready size M-2XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.499.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju7.jpg" alt="baju7" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KEMEJA UNIQLO II</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size M-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.499.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju8.jpg" alt="baju8" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KEMEJA UNIQLO III</p>
+            <p class="text-body">
+              100% Kain Katun Premium <br />
+              Ready size M-XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.499.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju9.jpg" alt="baju9" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KEMEJA MOTIF FULLPRINT</p>
+            <p class="text-body">
+              Bahan Kain Polyester <br />
+              Ready size S-2XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.150.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="column side">
+        <div class="card">
+          <div
+            class="card-img"
+            onclick="details()"
+            title="Click to see details"
+          >
+            <img src="baju10.jpg" alt="baju10" />
+          </div>
+          <div class="card-info">
+            <p class="text-title">KEMEJA MOTIF FULLPRINT 2</p>
+            <p class="text-body">
+              Bahan Kain Polyester <br />
+              Ready size S-2XL
+            </p>
+          </div>
+          <div class="card-footer">
+            <p class="text-title">Rp.150.000</p>
+            <button
+              class="Btn"
+              onclick="goToAnotherPage()"
+              title="Click to buy"
+            >
+              <svg class="svgIcon" viewBox="0 0 576 512">
+                <path
+                  d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="prev-next">
+      <a href="celana.html">
+        <button class="next-button" title="next">
+          <i class="fas fa-chevron-right"></i></button
+      ></a>
+    </div>
+
+    <div class="footer">
+      <div class="contact-us"></div>
+      <p>© Elang Timur. All rights reserved.</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a
+          href="https://instagram.com/ulzyy_?igshid=OGQ5ZDc2ODk2ZA=="
+          class="social-icon instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/oelzy.tbx"
+          class="social-icon facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ulul-azmi-a-latala-b2a15a269"
+          class="social-icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+6282196699498" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>

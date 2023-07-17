@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: darkkhaki;
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* WADAH FORM SIGN ATAU SIGN UP */
+.container {
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px #000000;
+  padding: 30px;
+  width: 350px;
+  margin: 50px auto;
+  height: 490px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* SOSIAL MEDIA */
+.social {
+  margin-top: 20px;
+  display: flex;
+  cursor: pointer;
+}
+.social div {
+  width: 145px;
+  border-radius: 10px;
+  padding: 5px 10px 10px 5px;
+  background-color: darkkhaki;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.social div:hover {
+  background-color: #333;
+  color: #ffffff;
+}
+
+.social i {
+  margin-right: 4px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* FIELD INPUT DAN TOMBOL INPUT PADA FORM */
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="date"] {
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+button {
+  background-color: darkkhaki;
+  color: #ffffff;
+  border: none;
+  margin-top: 8px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+button:hover {
+  background-color: #333;
+  box-shadow: 8px 0 20px darkkhaki;
+}
+
+/* EYE ICON PASSWORD */
+.new-password-input,
+.password-input {
+  position: relative;
+}
+.new-password-input a,
+.password-input a {
+  position: absolute;
+  top: 55%;
+  right: 11px;
+  transform: translateY(-50%);
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* BAR NAVIGASI */
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 30px #000000;
+  justify-content: space-between;
+  align-items: center;
+}
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: darkkhaki;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  margin: 0 10px;
+  cursor: pointer;
+}
+/* Change color on hover */
+.topnav a:hover {
+  color: #ffffff;
+  background-color: #333;
+}
+
+/* TOMBOL SEARCH */
+.search-container {
+  margin-left: 300px;
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+.search-container input[type="text"] {
+  padding: 8px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  margin-right: -5px;
+  margin-left: -35px;
+  width: 45%;
+}
+.search-container button {
+  padding: 8px 12px;
+  background: darkkhaki;
+  border: none;
+  color: #ffffff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.search-container button:hover {
+  background-color: #333;
+  color: darkkhaki;
+}
+
+/* LOGO */
+.logo-container {
+  float: left;
+  display: flex;
+  align-items: center; /* Menambahkan ruang antara logo dan link */
+}
+.logo {
+  max-width: 50px;
+  height: auto;
+}
+.logo-text {
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 10px;
+  color: darkkhaki;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}

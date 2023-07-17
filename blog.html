@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>UA</title>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+
+    <div class="topnav">
+      <a href="account.html">Account</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blog</a>
+      <a href="categories.html">Categories</a>
+      <a href="home.html">Home</a>
+
+      <div class="logo-container">
+        <img src="elangtimur.jpg" alt="logo" class="logo" />
+        <h1 class="logo-text">ELANG TIMUR</h1>
+      </div>
+
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Search.."
+          name="search"
+          id="search-input"
+        />
+        <button type="submit" id="search-button">Search</button>
+      </div>
+    </div>
+
+    <div class="post">
+      <img src="fotosaya1.jpeg" alt="fotosaya" />
+      <h2 class="post-title">BLOG PRIBADI</h2>
+      <p class="post-date">6 Juli 2023</p>
+      <p class="post-content">
+        Selamat datang di blog pribadi saya di dalam website penjualan kami! Di
+        sini, saya ingin berbagi informasi, tips, dan panduan terkait
+        produk-produk yang kami tawarkan di website penjualan ini. Blog pribadi
+        ini merupakan tempat di mana saya dapat memberikan penjelasan lebih
+        mendalam tentang produk kami, memberikan saran penggunaan, dan
+        membagikan cerita pengalaman pelanggan. Melalui tulisan-tulisan di blog
+        ini, saya berharap dapat memberikan nilai tambah bagi para pelanggan
+        kami. Saya akan berbagi informasi terkini mengenai tren industri, tips
+        memilih produk yang tepat, panduan perawatan, dan berbagai konten
+        menarik lainnya yang berhubungan dengan produk kami. Saya sangat
+        menghargai umpan balik dari pelanggan kami, dan blog pribadi ini menjadi
+        saluran yang tepat untuk berinteraksi dengan Anda. Anda dapat mengajukan
+        pertanyaan, memberikan komentar, dan berbagi pengalaman menggunakan
+        produk kami di dalam blog ini. Saya akan dengan senang hati menjawab dan
+        berdiskusi dengan Anda. Tujuan saya adalah membuat pengalaman berbelanja
+        Anda di website ini lebih dari sekadar transaksi. Saya ingin menciptakan
+        komunitas yang saling mendukung dan berbagi pengetahuan di sekitar
+        produk-produk kami. Terima kasih telah mengunjungi blog pribadi kami di
+        dalam website penjualan ini. Saya harap Anda menemukan tulisan-tulisan
+        kami bermanfaat dan menginspirasi dalam perjalanan berbelanja Anda di
+        sini. Terima kasih atas dukungan Anda, dan jangan ragu untuk kembali
+        lagi untuk mendapatkan informasi terbaru dan konten menarik lainnya di
+        blog pribadi kami. <br /><br />Salam hangat, Ulul Azmi A. Latala
+      </p>
+    </div>
+
+    <div class="post">
+      <h2 class="post-title">Soon!</h2>
+      <p class="post-date">- -- ----</p>
+      <p class="post-content">Jangan lewatkan tulisan menarik ini!</p>
+    </div>
+
+    <div class="post">
+      <h2 class="post-title">Soon!</h2>
+      <p class="post-date">- -- ----</p>
+      <p class="post-content">
+        Tetaplah terhubung untuk mendapatkan pembaruan terbaru.
+      </p>
+    </div>
+
+    <div class="footer">
+      <div class="contact-us"></div>
+      <p>©Elang Timur. All rights reserved.</p>
+      <p>Follow us on social media:</p>
+      <div class="social-icons">
+        <a
+          href="https://instagram.com/ulzyy_?igshid=OGQ5ZDc2ODk2ZA=="
+          class="social-icon instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/oelzy.tbx"
+          class="social-icon facebook"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/ulul-azmi-a-latala-b2a15a269"
+          class="social-icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://wa.me/+6282196699498" class="social-icon whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+    <script>
+      // Fungsi untuk mengaktifkan pencarian
+      function activateSearch() {
+        const searchInput = document.getElementById("search-input");
+        const searchButton = document.getElementById("search-button");
+
+        // Aksi saat tombol "Search" diklik
+        searchButton.addEventListener("click", function () {
+          const searchValue = searchInput.value.toLowerCase();
+          const posts = document.querySelectorAll(".post");
+
+          posts.forEach((post) => {
+            const postContent = post
+              .querySelector(".post-content")
+              .textContent.toLowerCase();
+
+            // Periksa apakah konten postingan mengandung teks pencarian
+            if (postContent.includes(searchValue)) {
+              post.style.display = "block";
+            } else {
+              post.style.display = "none";
+            }
+          });
+        });
+      }
+      // Panggil fungsi untuk mengaktifkan pencarian
+      activateSearch();
+    </script>
+  </body>
+</html>
